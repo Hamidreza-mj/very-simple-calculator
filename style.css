@@ -1,0 +1,34 @@
+html {
+    user-select: none;
+}
+
+h2 {
+    border-radius: 2px;
+    border: dashed;
+    width: 250px;
+    border-radius: 10px;
+    min-height: 80px;
+    border-color: #06819d;
+    padding-left: 8px;
+    padding-top: 2px;
+    color: #06819d;
+    letter-spacing: 2.5px;
+}
+
+button {
+    font-size: large;
+    min-width:  60px;
+    min-height: 35px;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background: #baf2ff;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font
+}
+
+button:hover {
+    background: #0d5b6cc2;
+}

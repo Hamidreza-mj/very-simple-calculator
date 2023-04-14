@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>
+        Result:
+        <p id="result" style="color: black; font-size: medium;"></p>
+    </h2>
+
+    <button onclick="addSymbol(1)">1</button>
+    <button onclick="addSymbol(2)">2</button>
+    <button onclick="addSymbol(3)">3</button>
+    <button onclick="addSymbol('+')">+</button>
+
+    <br>
+
+    <button onclick="addSymbol(4)">4</button>
+    <button onclick="addSymbol(5)">5</button>
+    <button onclick="addSymbol(6)">6</button>
+    <button onclick="addSymbol('-')">-</button>
+
+    <br>
+
+    <button onclick="addSymbol(7)">7</button>
+    <button onclick="addSymbol(8)">8</button>
+    <button onclick="addSymbol(9)">9</button>
+    <button onclick="addSymbol('*')">x</button>
+
+    <br>
+
+    <button onclick="addSymbol(0)">0</button>
+    <button onclick="addSymbol('.')">.</button>
+    <button onclick="addSymbol('/')">/</button>
+    <button onclick="clearResult()">AC</button>
+    <br>
+
+    <button style="width: 195px; margin-top: 10px;" onclick="calculate()">calculate</button>
+    <button onclick="back()">CE</button>
+
+
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>
