@@ -11,41 +11,45 @@
 </head>
 
 <body>
-    <h2>
-        Result:
-        <p id="result" style="color: black; font-size: medium;"></p>
-    </h2>
+    <div class="center">
+        <h2 class="center">
+            <div style="text-align: left;">
+                Result:
+                <p id="result" style="color: black; font-size: medium;"></p>
+            </div>
+        </h2>
 
-    <button onclick="addSymbol(1)">1</button>
-    <button onclick="addSymbol(2)">2</button>
-    <button onclick="addSymbol(3)">3</button>
-    <button onclick="addSymbol('+')">+</button>
+        <button onclick="addSymbol(1)">1</button>
+        <button onclick="addSymbol(2)">2</button>
+        <button onclick="addSymbol(3)">3</button>
+        <button onclick="addSymbol('+')">+</button>
 
-    <br>
+        <br>
 
-    <button onclick="addSymbol(4)">4</button>
-    <button onclick="addSymbol(5)">5</button>
-    <button onclick="addSymbol(6)">6</button>
-    <button onclick="addSymbol('-')">-</button>
+        <button onclick="addSymbol(4)">4</button>
+        <button onclick="addSymbol(5)">5</button>
+        <button onclick="addSymbol(6)">6</button>
+        <button onclick="addSymbol('-')">-</button>
 
-    <br>
+        <br>
 
-    <button onclick="addSymbol(7)">7</button>
-    <button onclick="addSymbol(8)">8</button>
-    <button onclick="addSymbol(9)">9</button>
-    <button onclick="addSymbol('*')">x</button>
+        <button onclick="addSymbol(7)">7</button>
+        <button onclick="addSymbol(8)">8</button>
+        <button onclick="addSymbol(9)">9</button>
+        <button onclick="addSymbol('*')">x</button>
 
-    <br>
+        <br>
 
-    <button onclick="addSymbol(0)">0</button>
-    <button onclick="addSymbol('.')">.</button>
-    <button onclick="addSymbol('/')">/</button>
-    <button onclick="clearResult()">AC</button>
-    <br>
+        <button onclick="addSymbol(0)">0</button>
+        <button onclick="addSymbol('.')">.</button>
+        <button onclick="addSymbol('/')">/</button>
+        <button onclick="clearResult()">AC</button>
+        <br>
 
-    <button style="width: 195px; margin-top: 10px;" onclick="calculate()">calculate</button>
-    <button onclick="back()">CE</button>
+        <button style="width: 195px; margin-top: 10px;" onclick="calculate()">calculate</button>
+        <button onclick="back()">CE</button>
 
+    </div>
 
     <script type="text/javascript" src="./app.js"></script>
 </body>

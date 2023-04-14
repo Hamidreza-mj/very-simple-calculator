@@ -10,14 +10,17 @@ h2 {
     min-height: 80px;
     border-color: #06819d;
     padding-left: 8px;
+    padding-right: 8px;
     padding-top: 2px;
     color: #06819d;
     letter-spacing: 2.5px;
+    margin-bottom: 15px !important;
+    margin-top: 100px !important;
 }
 
 button {
     font-size: large;
-    min-width:  60px;
+    min-width: 60px;
     min-height: 35px;
     margin-top: 5px;
     margin-right: 5px;
@@ -31,4 +34,9 @@ button {
 
 button:hover {
     background: #0d5b6cc2;
+}
+
+.center {
+    margin: auto;
+    text-align: center;
 }
