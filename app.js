@@ -1,4 +1,5 @@
 const resultText = document.getElementById('result');
+const errorMsg = 'Error!';
 
 function clearResult() {
     resultText.innerText = '';
@@ -10,7 +11,7 @@ function back() {
 }
 
 function parseMath(str) {
-    return Function(`return ${str}`)()
+    return Function(`return ${str}`)();
 }
 
 function strContainsNumber(str) {
@@ -18,6 +19,9 @@ function strContainsNumber(str) {
 }
 
 function addSymbol(symbol) {
+    if (resultText.innerText == errorMsg)
+        clearResult();
+
     let canBeAdded = false;
 
     if (isNaN(symbol)) {
@@ -44,20 +48,20 @@ function addSymbol(symbol) {
                 //previous char is not number
 
                 //2*-2
-                if (symbol == '-') {
+                if (symbol == '-' || symbol == '.') {
                     canBeAdded = true;
                 } else {
                     canBeAdded = false;
                 }
             } else {
                 //previous char is number
-                if (symbol == '.') {
-                    resultText.innerText.includes('.')
+                // if (symbol == '.') {
+                //     resultText.innerText.includes('.')
 
-                    canBeAdded = false;
-                } else {
-                    canBeAdded = true;
-                }
+                //     canBeAdded = false;
+                // } else {
+                canBeAdded = true;
+                // }
             }
         }
 
@@ -78,12 +82,12 @@ function calculate() {
         return;
     }
 
+    let resultOfCalculate = 0;
 
-    let resultOfCalculate = parseMath(currentValue);
-
-    if (resultOfCalculate === undefined) {
-        resultText.innerText = 'Error';
-        return;
+    try {
+        resultOfCalculate = parseMath(currentValue);
+    } catch (error) {
+        resultOfCalculate = errorMsg;
     }
 
     resultText.innerText = resultOfCalculate;
